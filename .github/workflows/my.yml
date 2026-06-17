@@ -1,22 +1,22 @@
-name: My First Pipelines
+name: My First Workflow
 
 on:
   push:
 
 jobs:
-  build:
+  hello-job:
 
     runs-on: ubuntu-latest
 
     steps:
 
-      - name: Print Welcome Message
+      - name: Print Message
         run: echo "Hello Sonu"
 
       - name: Show Date
         run: date
 
-      - name: Show Current Directory
+      - name: Show Directory
         run: pwd
 
       - name: List Files
